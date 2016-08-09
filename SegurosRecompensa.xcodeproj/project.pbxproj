@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2589BAAE86832861543863 /* Pods_Seguros_Recompensa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DB2F7ABEBD4D4AE1D27621 /* Pods_Seguros_Recompensa.framework */; };
+		735BA7C91D5A2654005BF255 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 735BA7C81D5A2654005BF255 /* Localizable.strings */; };
 		9833120B1B894D7000195311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833120A1B894D7000195311 /* AppDelegate.swift */; };
 		983312121B894D7000195311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983312111B894D7000195311 /* Images.xcassets */; };
 		983312151B894D7000195311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983312131B894D7000195311 /* LaunchScreen.xib */; };
@@ -168,6 +170,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17BCB7060A989EF3B283DF90 /* Pods-Seguros Recompensa.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seguros Recompensa.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa.appstore.xcconfig"; sourceTree = "<group>"; };
+		6060D72342FD979A6CF2A1B0 /* Pods-Seguros Recompensa.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seguros Recompensa.qa.xcconfig"; path = "Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa.qa.xcconfig"; sourceTree = "<group>"; };
+		735BA7C81D5A2654005BF255 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		983312051B894D7000195311 /* Seguros Recompensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seguros Recompensa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		983312091B894D7000195311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9833120A1B894D7000195311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -332,6 +337,9 @@
 		98A89A2A1BD9611600206B15 /* RecommendedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendedViewController.xib; sourceTree = "<group>"; };
 		98DC20401B9A009B00554593 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		98DC20411B9A009B00554593 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		AFF7AC3C4942592E09060DB1 /* Pods-Seguros Recompensa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seguros Recompensa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa.release.xcconfig"; sourceTree = "<group>"; };
+		D6DB2F7ABEBD4D4AE1D27621 /* Pods_Seguros_Recompensa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seguros_Recompensa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD7B9C8E3616DDD1964BB5C /* Pods-Seguros Recompensa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seguros Recompensa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +352,7 @@
 				9833129F1B8A57A300195311 /* Foundation.framework in Frameworks */,
 				9833129D1B8A573200195311 /* UIKit.framework in Frameworks */,
 				98DC20421B9A009B00554593 /* Fabric.framework in Frameworks */,
+				5C2589BAAE86832861543863 /* Pods_Seguros_Recompensa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +380,9 @@
 				9833121D1B894D7000195311 /* DesclubiOSTests */,
 				983312061B894D7000195311 /* Products */,
 				9889FDD61BD8077E00EE8B82 /* SegurosRecompensa-Bridging-Header.h */,
+				735BA7C81D5A2654005BF255 /* Localizable.strings */,
+				FB5537BB731799F0DAC96F9B /* Pods */,
+				CDED82CF25E19CE53A5CEBE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -831,6 +843,25 @@
 			path = Recommended;
 			sourceTree = "<group>";
 		};
+		CDED82CF25E19CE53A5CEBE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6DB2F7ABEBD4D4AE1D27621 /* Pods_Seguros_Recompensa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB5537BB731799F0DAC96F9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFD7B9C8E3616DDD1964BB5C /* Pods-Seguros Recompensa.debug.xcconfig */,
+				AFF7AC3C4942592E09060DB1 /* Pods-Seguros Recompensa.release.xcconfig */,
+				17BCB7060A989EF3B283DF90 /* Pods-Seguros Recompensa.appstore.xcconfig */,
+				6060D72342FD979A6CF2A1B0 /* Pods-Seguros Recompensa.qa.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -838,10 +869,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 983312241B894D7000195311 /* Build configuration list for PBXNativeTarget "Seguros Recompensa" */;
 			buildPhases = (
+				67878C36DCF0EF0796594F52 /* [CP] Check Pods Manifest.lock */,
 				983312011B894D7000195311 /* Sources */,
 				983312021B894D7000195311 /* Frameworks */,
 				983312031B894D7000195311 /* Resources */,
 				98DC203F1B9A001900554593 /* ShellScript */,
+				45662725B09644F6FD94EB68 /* [CP] Embed Pods Frameworks */,
+				81F5DF3B2F1742C639899C04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -917,6 +951,7 @@
 			files = (
 				98A89A581BD9611600206B15 /* MembershipAccessViewController.xib in Resources */,
 				98A89A451BD9611600206B15 /* SubcategoryFilterViewController.xib in Resources */,
+				735BA7C91D5A2654005BF255 /* Localizable.strings in Resources */,
 				98A89A561BD9611600206B15 /* SearchMapViewController.xib in Resources */,
 				98A89A391BD9611600206B15 /* CategoryFilterViewController.xib in Resources */,
 				98A89A5B1BD9611600206B15 /* MembershipOptionsViewController.xib in Resources */,
@@ -950,6 +985,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45662725B09644F6FD94EB68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67878C36DCF0EF0796594F52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81F5DF3B2F1742C639899C04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		98DC203F1B9A001900554593 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1209,6 +1289,7 @@
 		};
 		983312251B894D7000195311 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD7B9C8E3616DDD1964BB5C /* Pods-Seguros Recompensa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://feeds.grupomedios.com:6543";
@@ -1231,7 +1312,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = Debug;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
@@ -1240,6 +1324,7 @@
 		};
 		983312261B894D7000195311 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF7AC3C4942592E09060DB1 /* Pods-Seguros Recompensa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://feeds.grupomedios.com:6543";
@@ -1262,7 +1347,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = Release;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
@@ -1345,6 +1433,7 @@
 		};
 		98DAB3861B97E92300AC05B2 /* QA */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6060D72342FD979A6CF2A1B0 /* Pods-Seguros Recompensa.qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://feeds.grupomedios.com:6543";
@@ -1367,7 +1456,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = QA;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
@@ -1430,6 +1522,7 @@
 		};
 		98DAB3891B97E92A00AC05B2 /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BCB7060A989EF3B283DF90 /* Pods-Seguros Recompensa.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://feeds.grupomedios.com:6543";
@@ -1452,7 +1545,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = "";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";

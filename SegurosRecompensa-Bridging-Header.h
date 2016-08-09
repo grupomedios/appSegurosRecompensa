@@ -15,4 +15,6 @@
 #import "PureLayout.h"
 #import "MGSwipeButton.h"
 #import "MGSwipeTableCell.h"
+#import <Google/Analytics.h>
+
 #endif
