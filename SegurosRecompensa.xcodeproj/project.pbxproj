@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5C2589BAAE86832861543863 /* Pods_Seguros_Recompensa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DB2F7ABEBD4D4AE1D27621 /* Pods_Seguros_Recompensa.framework */; };
 		735BA7C91D5A2654005BF255 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 735BA7C81D5A2654005BF255 /* Localizable.strings */; };
+		735BA7CB1D5A528C005BF255 /* GoogleAnalitycUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BA7CA1D5A528C005BF255 /* GoogleAnalitycUtil.swift */; };
+		735BA7DC1D5A6717005BF255 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 735BA7DB1D5A6717005BF255 /* GoogleService-Info.plist */; };
 		9833120B1B894D7000195311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833120A1B894D7000195311 /* AppDelegate.swift */; };
 		983312121B894D7000195311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983312111B894D7000195311 /* Images.xcassets */; };
 		983312151B894D7000195311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983312131B894D7000195311 /* LaunchScreen.xib */; };
@@ -173,6 +175,8 @@
 		17BCB7060A989EF3B283DF90 /* Pods-Seguros Recompensa.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seguros Recompensa.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa.appstore.xcconfig"; sourceTree = "<group>"; };
 		6060D72342FD979A6CF2A1B0 /* Pods-Seguros Recompensa.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seguros Recompensa.qa.xcconfig"; path = "Pods/Target Support Files/Pods-Seguros Recompensa/Pods-Seguros Recompensa.qa.xcconfig"; sourceTree = "<group>"; };
 		735BA7C81D5A2654005BF255 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		735BA7CA1D5A528C005BF255 /* GoogleAnalitycUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAnalitycUtil.swift; sourceTree = "<group>"; };
+		735BA7DB1D5A6717005BF255 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		983312051B894D7000195311 /* Seguros Recompensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seguros Recompensa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		983312091B894D7000195311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9833120A1B894D7000195311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -381,6 +385,7 @@
 				983312061B894D7000195311 /* Products */,
 				9889FDD61BD8077E00EE8B82 /* SegurosRecompensa-Bridging-Header.h */,
 				735BA7C81D5A2654005BF255 /* Localizable.strings */,
+				735BA7DB1D5A6717005BF255 /* GoogleService-Info.plist */,
 				FB5537BB731799F0DAC96F9B /* Pods */,
 				CDED82CF25E19CE53A5CEBE9 /* Frameworks */,
 			);
@@ -757,6 +762,7 @@
 				98A899FA1BD9611600206B15 /* Magic.swift */,
 				98A899FB1BD9611600206B15 /* NavigationUtil.swift */,
 				98A899FC1BD9611600206B15 /* UserHelper.swift */,
+				735BA7CA1D5A528C005BF255 /* GoogleAnalitycUtil.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -956,6 +962,7 @@
 				98A89A391BD9611600206B15 /* CategoryFilterViewController.xib in Resources */,
 				98A89A5B1BD9611600206B15 /* MembershipOptionsViewController.xib in Resources */,
 				98A89A521BD9611600206B15 /* DiscountPopoverViewController.xib in Resources */,
+				735BA7DC1D5A6717005BF255 /* GoogleService-Info.plist in Resources */,
 				983312151B894D7000195311 /* LaunchScreen.xib in Resources */,
 				983312121B894D7000195311 /* Images.xcassets in Resources */,
 				98A89A371BD9611600206B15 /* CardPopoverViewController.xib in Resources */,
@@ -1090,6 +1097,7 @@
 				98A899C11BD960F500206B15 /* FromJSON.swift in Sources */,
 				98A899D01BD960F500206B15 /* MultiSelectSegmentedControl.m in Sources */,
 				98A899C81BD960F500206B15 /* EnumTransform.swift in Sources */,
+				735BA7CB1D5A528C005BF255 /* GoogleAnalitycUtil.swift in Sources */,
 				98A899BE1BD960F500206B15 /* Validation.swift in Sources */,
 				98A899EA1BD960F500206B15 /* RegexRule.swift in Sources */,
 				98A89A321BD9611600206B15 /* CommonConstants.swift in Sources */,
