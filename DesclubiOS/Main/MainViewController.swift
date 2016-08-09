@@ -194,7 +194,7 @@ class MainViewController: MembershipBaseUIViewController, UITextFieldDelegate, U
 	func textFieldShouldReturn(textField: UITextField) -> Bool {
 		self.view.endEditing(true)
 		
-		let discountsViewController = DiscountsViewController(nibName: "DiscountsViewController", bundle: nil, currentCategory: self.categories[self.categories.count - 2])
+		let discountsViewController = DiscountsViewController(nibName: "DiscountsViewController", bundle: nil, currentCategory: self.categories[self.categories.count - 1])
 		if let text = searchTextField.text{
 			discountsViewController.searchString = text
 		}
