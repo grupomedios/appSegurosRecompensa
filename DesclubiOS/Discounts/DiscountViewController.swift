@@ -60,13 +60,7 @@ class DiscountViewController: AbstractLocationViewController, UIPopoverPresentat
 		setupCurrentView()
 		setDiscountData()
 		
-		let lLast:UIView = scrollView.subviews.last! as UIView
-		let wd:CGFloat = lLast.frame.origin.y
-		let ht:CGFloat = lLast.frame.size.height + 60
-		
-		let sizeOfContent:CGFloat = wd+ht
-		scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, sizeOfContent)
-	}
+    }
 	
 	/**
 	Returns the distance in meters from the current position to the discount
