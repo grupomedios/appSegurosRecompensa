@@ -61,6 +61,8 @@ class MainViewController: MembershipBaseUIViewController, UITextFieldDelegate, U
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
 		
+        GoogleAnalitycUtil.trackScreenName("analytics.screen.home")
+
 		//set color
 		commonView.backgroundColor = ColorUtil.desclubBlueColor()
 		
@@ -119,6 +121,11 @@ class MainViewController: MembershipBaseUIViewController, UITextFieldDelegate, U
 			
 			let selectedCategory:FakeCategoryRepresentation = self.categories[indexPath.row]
 			
+            if let name = selectedCategory.name {
+                let event = "Categoria - " + name
+                GoogleAnalitycUtil.trackEvent("analytics.category.category", event: event)
+            }
+            
 			if(selectedCategory._id == "-1"){
 				let alertController = UIAlertController(title: "Red médica", message:
 					"Muy pronto podrás disfrutar de los beneficios de red médica con tu tarjeta Desclub", preferredStyle: UIAlertControllerStyle.Alert)

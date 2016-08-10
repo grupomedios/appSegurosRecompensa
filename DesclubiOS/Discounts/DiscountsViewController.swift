@@ -68,6 +68,8 @@ class DiscountsViewController: AbstractLocationViewController, UITableViewDelega
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        GoogleAnalitycUtil.trackScreenName("analytics.screen.discounts_list")
+
         setupCurrentView()
     }
     

@@ -30,4 +30,14 @@ class GoogleAnalitycUtil: AnyObject {
         tracker.send(builder.build() as [NSObject : AnyObject])
     }
     
+    class func trackEvent(category: String, event: String){
+        // May return nil if a tracker has not already been initialized with a property
+        // ID.
+        let tracker = GAI.sharedInstance().defaultTracker
+        let builder = GAIDictionaryBuilder.createEventWithCategory(category, action: event, label: nil, value: nil)
+        
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
+    }
+    
 }
