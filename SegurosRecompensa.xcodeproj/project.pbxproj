@@ -1309,8 +1309,8 @@
 				CATEGORY_MODA_HOGAR = 551ed7db5d713df64eace618;
 				CATEGORY_SERVICIOS = 551ed7ee5d713df64eace619;
 				CATEGORY_TURISMO = 551ed80b5d713df64eace61a;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DESCLUB_CORPORATE = 56292902209fbaf369edca57;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1324,8 +1324,9 @@
 					"$(inherited)",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = Debug;
@@ -1344,8 +1345,8 @@
 				CATEGORY_MODA_HOGAR = 551ed7db5d713df64eace618;
 				CATEGORY_SERVICIOS = 551ed7ee5d713df64eace619;
 				CATEGORY_TURISMO = 551ed80b5d713df64eace61a;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DESCLUB_CORPORATE = 55947ab755de186939a837d5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1359,8 +1360,9 @@
 					"$(inherited)",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = Release;
@@ -1453,8 +1455,8 @@
 				CATEGORY_MODA_HOGAR = 551ed7db5d713df64eace618;
 				CATEGORY_SERVICIOS = 551ed7ee5d713df64eace619;
 				CATEGORY_TURISMO = 551ed80b5d713df64eace61a;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DESCLUB_CORPORATE = 55947ab755de186939a837d5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1468,8 +1470,9 @@
 					"$(inherited)",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = QA;
@@ -1542,8 +1545,8 @@
 				CATEGORY_MODA_HOGAR = 551ed7db5d713df64eace618;
 				CATEGORY_SERVICIOS = 551ed7ee5d713df64eace619;
 				CATEGORY_TURISMO = 551ed80b5d713df64eace61a;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DESCLUB_CORPORATE = 55947ab755de186939a837d5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1557,8 +1560,9 @@
 					"$(inherited)",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = AppStore;
