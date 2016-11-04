@@ -108,8 +108,6 @@
 		98A899EE1BD960F500206B15 /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A899951BD960F500206B15 /* ZipCodeRule.swift */; };
 		98A89A2B1BD9611600206B15 /* BranchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A899F01BD9611600206B15 /* BranchesViewController.swift */; };
 		98A89A2C1BD9611600206B15 /* BranchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A899F11BD9611600206B15 /* BranchesViewController.xib */; };
-		98A89A2D1BD9611600206B15 /* DiscountBranchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A899F21BD9611600206B15 /* DiscountBranchTableViewCell.swift */; };
-		98A89A2E1BD9611600206B15 /* DiscountBranchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A899F31BD9611600206B15 /* DiscountBranchTableViewCell.xib */; };
 		98A89A2F1BD9611600206B15 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A899F51BD9611600206B15 /* CardViewController.swift */; };
 		98A89A301BD9611600206B15 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A899F61BD9611600206B15 /* CardViewController.xib */; };
 		98A89A311BD9611600206B15 /* AbstractLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A899F81BD9611600206B15 /* AbstractLocationViewController.swift */; };
@@ -290,8 +288,6 @@
 		98A899951BD960F500206B15 /* ZipCodeRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeRule.swift; sourceTree = "<group>"; };
 		98A899F01BD9611600206B15 /* BranchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchesViewController.swift; sourceTree = "<group>"; };
 		98A899F11BD9611600206B15 /* BranchesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BranchesViewController.xib; sourceTree = "<group>"; };
-		98A899F21BD9611600206B15 /* DiscountBranchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountBranchTableViewCell.swift; sourceTree = "<group>"; };
-		98A899F31BD9611600206B15 /* DiscountBranchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscountBranchTableViewCell.xib; sourceTree = "<group>"; };
 		98A899F51BD9611600206B15 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		98A899F61BD9611600206B15 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		98A899F81BD9611600206B15 /* AbstractLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractLocationViewController.swift; sourceTree = "<group>"; };
@@ -739,8 +735,6 @@
 			children = (
 				98A899F01BD9611600206B15 /* BranchesViewController.swift */,
 				98A899F11BD9611600206B15 /* BranchesViewController.xib */,
-				98A899F21BD9611600206B15 /* DiscountBranchTableViewCell.swift */,
-				98A899F31BD9611600206B15 /* DiscountBranchTableViewCell.xib */,
 			);
 			path = Branches;
 			sourceTree = "<group>";
@@ -968,7 +962,6 @@
 				98A89A371BD9611600206B15 /* CardPopoverViewController.xib in Resources */,
 				98A89A3D1BD9611600206B15 /* DiscountTableViewCell.xib in Resources */,
 				98A89A4C1BD9611600206B15 /* CategoryCollectionViewCell.xib in Resources */,
-				98A89A2E1BD9611600206B15 /* DiscountBranchTableViewCell.xib in Resources */,
 				98A89A301BD9611600206B15 /* CardViewController.xib in Resources */,
 				98A89A3F1BD9611600206B15 /* DiscountViewController.xib in Resources */,
 				98A89A431BD9611600206B15 /* StatesFilterViewController.xib in Resources */,
@@ -1090,7 +1083,6 @@
 				98A899B41BD960F500206B15 /* Error.swift in Sources */,
 				98A899D61BD960F500206B15 /* ILTranslucentView.swift in Sources */,
 				98A899991BD960F500206B15 /* CorporateMembershipFacade.swift in Sources */,
-				98A89A2D1BD9611600206B15 /* DiscountBranchTableViewCell.swift in Sources */,
 				98A89A341BD9611600206B15 /* NavigationUtil.swift in Sources */,
 				98A899AC1BD960F500206B15 /* ZoneRepresentation.swift in Sources */,
 				98A899D11BD960F500206B15 /* UISegmentedControl+VerticalLayout.swift in Sources */,
@@ -1326,7 +1318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = Debug;
@@ -1362,7 +1354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = Release;
@@ -1472,7 +1464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = QA;
@@ -1562,7 +1554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = AppStore;

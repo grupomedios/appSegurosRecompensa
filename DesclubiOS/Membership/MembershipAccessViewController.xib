@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MembershipAccessViewController" customModule="Seguros_Recompensa" customModuleProvider="target">
@@ -32,7 +32,6 @@
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ir7-CN-PDf">
                                     <rect key="frame" x="70" y="35" width="220" height="30"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="Lgu-2y-lHy"/>
                                     </constraints>
@@ -41,7 +40,6 @@
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail: *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEe-fb-XA1">
                                     <rect key="frame" x="1" y="99" width="67" height="15"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="67" id="XVx-4K-zhm"/>
                                     </constraints>
@@ -51,16 +49,14 @@
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jxa-qF-86a">
                                     <rect key="frame" x="70" y="90" width="220" height="30"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="hZk-ME-9Uh"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                 </textField>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Póliza *" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZt-7g-Z8e">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No. Póliza *" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZt-7g-Z8e">
                                     <rect key="frame" x="1" y="154" width="67" height="13"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="67" id="fk0-qy-a1z"/>
                                     </constraints>
@@ -70,7 +66,6 @@
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No. de Póliza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-5m-1DR">
                                     <rect key="frame" x="70" y="145" width="220" height="30"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="sFF-6A-dsp"/>
                                     </constraints>
@@ -79,16 +74,14 @@
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S78-W8-wx3">
                                     <rect key="frame" x="70" y="200" width="220" height="30"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="URN-6G-4yn"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                 </textField>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celular:" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-kw-tbe">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Celular:" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-kw-tbe">
                                     <rect key="frame" x="1" y="207" width="67" height="15"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="67" id="uXQ-vi-uwl"/>
                                     </constraints>
@@ -98,7 +91,6 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpO-rg-0Yb">
                                     <rect key="frame" x="89" y="260" width="123" height="38"/>
-                                    <animations/>
                                     <color key="backgroundColor" red="0.050980392156862744" green="0.18823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="123" id="S0e-VX-SC6"/>
@@ -115,7 +107,6 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whV-ch-hy6">
                                     <rect key="frame" x="272" y="8" width="20" height="20"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="Bc4-0I-JGc"/>
                                         <constraint firstAttribute="height" constant="20" id="Oww-O3-ryF"/>
@@ -129,7 +120,6 @@
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre y apellido *" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGb-aR-H5h">
                                     <rect key="frame" x="1" y="35" width="67" height="29"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="67" id="t7M-hP-Ny7"/>
                                     </constraints>
@@ -139,7 +129,6 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uf-jm-Sy6">
                                     <rect key="frame" x="70" y="66" width="220" height="0.0"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="IrN-53-HCG"/>
                                     </constraints>
@@ -149,7 +138,6 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zG-j5-2bz">
                                     <rect key="frame" x="70" y="122" width="220" height="0.0"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="naY-uH-Gkm"/>
                                     </constraints>
@@ -159,7 +147,6 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajx-NT-pR4">
                                     <rect key="frame" x="70" y="176" width="220" height="0.0"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="7HH-8c-Ehq"/>
                                     </constraints>
@@ -169,7 +156,6 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfy-Wb-o3B">
                                     <rect key="frame" x="70" y="231" width="220" height="0.0"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="220" id="Wfp-V7-QHc"/>
                                     </constraints>
@@ -178,7 +164,6 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="S78-W8-wx3" firstAttribute="leading" secondItem="cdQ-kw-tbe" secondAttribute="trailing" constant="2" id="0y5-U7-lIk"/>
@@ -214,7 +199,6 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="DqD-Nm-PdH" secondAttribute="bottom" id="Lzu-Ai-ziu"/>
                         <constraint firstItem="DqD-Nm-PdH" firstAttribute="leading" secondItem="jDH-hV-ghw" secondAttribute="leading" id="Nsr-52-VBP"/>
@@ -223,7 +207,6 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="jDH-hV-ghw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="34X-dt-xyQ"/>
