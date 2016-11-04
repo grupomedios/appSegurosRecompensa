@@ -1318,7 +1318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = Debug;
@@ -1354,7 +1354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = Release;
@@ -1464,7 +1464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = QA;
@@ -1554,7 +1554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.dclub.segurosrecompensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5510339-07d0-4ea0-b1aa-82412177dbf7";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegurosRecompensa-Bridging-Header.h";
 			};
 			name = AppStore;
