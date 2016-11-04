@@ -35,26 +35,48 @@ class CorporateMembershipFacade:AbstractFacade {
 	:param: errorHandler		the error handler
 	*/
 	func createCorporateMembreship(viewController:UIViewController, membership:CorporateMembershipInputRepresentation, completionHandler: (CorporateMembershipRepresentation?) -> Void, errorHandler: (ErrorType?, Bool?) -> Void) -> () {
-		
-		request(CorporateMembershipRouter.createCorporateMembership(membership: membership))
-			.validate()
-			.responseObject{ (request, response, membership: CorporateMembershipRepresentation?, raw:AnyObject?, error: ErrorType?) in
-				
-				if self.isValidResponse(response, viewController: viewController) {
-					if error != nil {
-						print(error)
-						if response?.statusCode == 409 {
-							errorHandler(error, true)
-						}else{
-							errorHandler(error, nil)
-						}
-					}else {
-						completionHandler(membership)
-					}
-				}else{
-					errorHandler(ErrorUtil.createInvalidResponseError(), nil)
-				}
-		}
+        
+        let url = Endpoints.baseURL + Endpoints.corporateMembership()
+        let param = Mapper().toJSON(membership)
+        
+        request(Method.POST, url, parameters: param, encoding: ParameterEncoding.JSON, headers: ["Content-Type": "application/json"]).validate().responseObject { (request, response, membership: CorporateMembershipRepresentation?, raw:AnyObject?, error: ErrorType?) in
+            
+            if self.isValidResponse(response, viewController: viewController) {
+                if error != nil {
+                    print(error)
+                    if response?.statusCode == 409 {
+                        completionHandler(membership)
+                    }else{
+                        errorHandler(error, nil)
+                    }
+                }else {
+                    completionHandler(membership)
+                }
+            }else {
+                errorHandler(ErrorUtil.createInvalidResponseError(), nil)
+            }
+        }
+        
+        
+//		request(CorporateMembershipRouter.createCorporateMembership(membership: membership))
+//			.validate()
+//			.responseObject{ (request, response, membership: CorporateMembershipRepresentation?, raw:AnyObject?, error: ErrorType?) in
+//				
+//				if self.isValidResponse(response, viewController: viewController) {
+//					if error != nil {
+//						print(error)
+//						if response?.statusCode == 409 {
+//							errorHandler(error, true)
+//						}else{
+//							errorHandler(error, nil)
+//						}
+//					}else {
+//						completionHandler(membership)
+//					}
+//				}else{
+//					errorHandler(ErrorUtil.createInvalidResponseError(), nil)
+//				}
+//		}
 	}
 	
 	/**

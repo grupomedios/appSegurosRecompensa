@@ -19,7 +19,9 @@ class MembershipAccessViewController: UIViewController, UITextFieldDelegate, Val
 	@IBOutlet weak var policyNumberError: UILabel!
 	@IBOutlet weak var mobileNumber: UITextField!
 	@IBOutlet weak var mobileNumberError: UILabel!
-	
+
+    @IBOutlet weak var numberMember: UITextField!
+
 	private var delegate:MembershipBaseUIViewController!
 	
 	let validator = Validator()
@@ -50,6 +52,7 @@ class MembershipAccessViewController: UIViewController, UITextFieldDelegate, Val
 		self.name.delegate = self
 		self.policyNumber.delegate = self
 		self.mobileNumber.delegate = self
+        self.numberMember.delegate = self
 		
 		//register validation
 		registerValidation()
@@ -88,6 +91,61 @@ class MembershipAccessViewController: UIViewController, UITextFieldDelegate, Val
 		mobileNumber.layer.borderWidth = 0.0
 		mobileNumberError.hidden = true
 	}
+    
+    @IBAction func login2(sender: UIButton) {
+        
+        SwiftSpinner.show("Autenticando", animated: true)
+        
+        let showValidationError:() -> Void = {
+            let alertController = UIAlertController(title: "Error", message:
+                "Tus credenciales no son válidas", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Intentar de nuevo", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        
+        let showValidationAlreadyUsedError:() -> Void = {
+            let alertController = UIAlertController(title: "Membresía usada", message:
+                "Esta membresía ya ha sido usada. Por favor contacte a soporte@desclub.com", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Intentar de nuevo", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        
+        /// completion handler for getCorporateMembershipByNumber
+        let completionHandler: (membershipRepresentation:CorporateMembershipRepresentation?) -> Void = { (membershipRepresentation:CorporateMembershipRepresentation?) in
+            
+            SwiftSpinner.hide()
+            
+            if let membershipRepresentation = membershipRepresentation {
+                magic(membershipRepresentation)
+                /*
+                 if membershipRepresentation.lastName1?.lowercaseString == self.lastName.text?.lowercaseString {
+                 if membershipRepresentation.alreadyUsed != nil && !membershipRepresentation.alreadyUsed! {
+                 //success
+                 self.successfulMembership(membershipRepresentation)
+                 }else{
+                 showValidationAlreadyUsedError()
+                 }
+                 }else{
+                 showValidationError()
+                 }*/
+                self.successfulMembership(membershipRepresentation)
+            }else{
+                showValidationError()
+            }
+        }
+        
+        let errorHandler: (error: ErrorType?) -> Void = { (error:ErrorType?) in
+            SwiftSpinner.hide()
+            showValidationError()
+        }
+        
+        // "0011174986802812"
+        
+        CorporateMembershipFacade.sharedInstance.getCorporateMembershipByNumber(self, number: self.numberMember.text!, completionHandler: completionHandler, errorHandler: errorHandler)
+        
+    }
 	
 	func validationSuccessful() {
 		
