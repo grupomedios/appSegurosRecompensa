@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import Crashlytics
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -84,8 +85,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GoogleAnalitycUtil.setupGoogleAnalityc()
 		NavigationUtil.presentMainViewController()
 		
+        confingOneSignal(launchOptions)
+        
 		return true
 	}
+    
+    func confingOneSignal(launchOptions: [NSObject: AnyObject]?) {
+        
+        //Add this line. Replace '5eb5a37e-b458-11e3-ac11-000c2940e62c' with your OneSignal App ID.
+        let appId = "5a9c9a95-a26f-494f-a9ee-79523842caa4"
+        
+        OneSignal.initWithLaunchOptions(launchOptions, appId: appId)
+        
+        // Sync hashed email if you have a login system or collect it.
+        //   Will be used to reach the user at the most optimal time of day.
+        // OneSignal.syncHashedEmail(userEmail)
+        
+        OneSignal.initWithLaunchOptions(launchOptions, appId: appId) { (result) in
+            
+            // This block gets called when the user reacts to a notification received
+            
+            let payload = result.notification.payload
+            let messageTitle = "Seguro Recompensa"
+            var fullMessage = payload.title
+            
+            //Try to fetch the action selected
+            if let additionalData = payload.additionalData, actionSelected = additionalData["actionSelected"] as? String {
+                fullMessage =  fullMessage + "\nPressed ButtonId:\(actionSelected)"
+            }
+            
+            let alertView = UIAlertView(title: messageTitle, message: fullMessage, delegate: nil, cancelButtonTitle: "Close")
+            alertView.show()
+        }
+        
+    }
 
 	func applicationWillResignActive(application: UIApplication) {
 		// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -127,7 +127,17 @@ class DiscountViewController: AbstractLocationViewController, UIPopoverPresentat
             if let phone = discount.branch?.phone {
                 if phone.characters.count > 0 {
                     self.btnPhone.hidden = false
-                    self.lblPhone.text = "Teléfono: " + phone
+                    let text = "Teléfono: " + phone
+                    
+                    let range = NSMakeRange("Teléfono: ".characters.count, phone.characters.count)
+                    
+                    let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: text)
+                    attributeString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: range)
+                    attributeString.addAttribute(NSUnderlineColorAttributeName, value: UIColor.blueColor(), range: range)
+                    attributeString.addAttribute(NSForegroundColorAttributeName, value: UIColor.blueColor(), range: range)
+                    
+                    
+                    self.lblPhone.attributedText = attributeString
                 }
             }
             

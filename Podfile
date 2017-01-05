@@ -7,4 +7,5 @@ target 'Seguros Recompensa' do
 
   # Pods for Seguros Recompensa
   pod 'Google/Analytics'
+  pod 'OneSignal'
 end
