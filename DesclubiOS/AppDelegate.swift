@@ -33,13 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		let mainViewController = MainViewController(nibName: "MainViewController", bundle: nil)
 		let mapViewController = MapViewController(nibName: "MapViewController", bundle: nil)
-		let recommendedViewController = RecommendedViewController(nibName: "RecommendedViewController", bundle: nil)
+        let notificationsViewController = NotificationsViewController(nibName: "NotificationsViewController", bundle: nil)
 		let cardViewController = CardViewController(nibName: "CardViewController", bundle: nil)
 		
 		
 		mainViewController.tabBarItem = UITabBarItem(title: "Inicio", image: UIImage(named: "icon_home_off")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "icon_home")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal))
 		mapViewController.tabBarItem = UITabBarItem(title: "Mapa", image: UIImage(named: "icon_map_off")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "icon_map")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal))
-		recommendedViewController.tabBarItem = UITabBarItem(title: "Recomendados", image: UIImage(named: "icon_recommended_off")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "icon_recommended")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal))
+        
+        notificationsViewController.tabBarItem = UITabBarItem(title: "Notificaciones", image: UIImage(named: "icon_notifications_off")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "icon_notifications")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal))
 		
 		cardViewController.tabBarItem = UITabBarItem(title: "Tarjeta", image: UIImage(named: "icon_card_off")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "icon_card")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal))
 		
@@ -47,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		self.globalNavigationController = UINavigationController()
 		
 		
-		let controllers = [mainViewController, mapViewController, recommendedViewController, cardViewController]
+		let controllers = [mainViewController, mapViewController, notificationsViewController, cardViewController]
 		
 		tabBarController.viewControllers = controllers
 		
@@ -93,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func confingOneSignal(launchOptions: [NSObject: AnyObject]?) {
         
         //Add this line. Replace '5eb5a37e-b458-11e3-ac11-000c2940e62c' with your OneSignal App ID.
-        let appId = "5a9c9a95-a26f-494f-a9ee-79523842caa4"
+        let appId = CommonConstants.idAppOneSignal()
         
         OneSignal.initWithLaunchOptions(launchOptions, appId: appId)
         
@@ -107,13 +108,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let payload = result.notification.payload
             let messageTitle = "Seguro Recompensa"
-            var fullMessage = payload.title
+
+            var fullMessage =  ""
             
-            //Try to fetch the action selected
-            if let additionalData = payload.additionalData, actionSelected = additionalData["actionSelected"] as? String {
-                fullMessage =  fullMessage + "\nPressed ButtonId:\(actionSelected)"
+            if let data = payload {
+                fullMessage =  data.title + "\n" + data.body
             }
-            
+
             let alertView = UIAlertView(title: messageTitle, message: fullMessage, delegate: nil, cancelButtonTitle: "Close")
             alertView.show()
         }

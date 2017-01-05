@@ -45,4 +45,11 @@ struct CommonConstants {
 	static let defaultLatitude = 4.6870310366196515
 	static let defaultLongitude = -74.0813231640625
 	
+    static func restAPIKeyOneSignal() -> String {
+        return "OTBlY2E4NzYtYjEyZS00MTZiLWI5M2UtZmQyZmY1ZTMxNzk0"
+    }
+    
+    static func idAppOneSignal() -> String {
+        return "5a9c9a95-a26f-494f-a9ee-79523842caa4"
+    }
 }

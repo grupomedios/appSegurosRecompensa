@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationsViewCell" rowHeight="100" id="zAg-jl-8lV" customClass="NotificationsViewCell" customModule="Seguros_Recompensa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zAg-jl-8lV" id="QS0-WJ-ocP">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzJ-ad-Rs2">
+                        <rect key="frame" x="12" y="26" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label sakld ajsslkdjalk dsajlkdsj kladsjlaks askdj akjhdsajh jkasdhjahd ajkdha " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="EDm-bX-CkD">
+                        <rect key="frame" x="12" y="53" width="355" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZo-1E-zl8">
+                        <rect key="frame" x="308" y="6" width="59" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EDm-bX-CkD" secondAttribute="trailing" constant="8" id="85j-ZI-IzO"/>
+                    <constraint firstItem="EDm-bX-CkD" firstAttribute="top" secondItem="vzJ-ad-Rs2" secondAttribute="bottom" constant="6" id="Ljd-7d-33H"/>
+                    <constraint firstItem="EDm-bX-CkD" firstAttribute="leading" secondItem="vzJ-ad-Rs2" secondAttribute="leading" id="RSk-cb-7jX"/>
+                    <constraint firstAttribute="trailing" secondItem="dZo-1E-zl8" secondAttribute="trailing" constant="8" id="ctJ-US-RMv"/>
+                    <constraint firstItem="dZo-1E-zl8" firstAttribute="top" secondItem="QS0-WJ-ocP" secondAttribute="top" constant="6" id="hUV-xd-Y0Z"/>
+                    <constraint firstItem="vzJ-ad-Rs2" firstAttribute="top" secondItem="dZo-1E-zl8" secondAttribute="bottom" id="mO9-t5-niP"/>
+                    <constraint firstItem="vzJ-ad-Rs2" firstAttribute="leading" secondItem="QS0-WJ-ocP" secondAttribute="leading" constant="12" id="vdE-zc-5P6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblDate" destination="dZo-1E-zl8" id="nOv-yh-qNp"/>
+                <outlet property="lblDescr" destination="EDm-bX-CkD" id="bc2-14-FaN"/>
+                <outlet property="lblTitle" destination="vzJ-ad-Rs2" id="SIL-ew-oOV"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="148"/>
+        </tableViewCell>
+    </objects>
+</document>

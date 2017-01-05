@@ -39,6 +39,12 @@ struct Endpoints {
 	static func corporateMembershipsById(id:String) -> String {
 		return "/v1/desclubAPI/corporateMemberships/\(id)"
 	}
+    
+    // ------------- Notifications ---------------------
+    static func oneSignalNotification(app_id:String, limit:Int, offset:Int) -> String {
+        return "https://onesignal.com/api/v1/notifications?app_id=\(app_id)&limit=\(limit)&offset=\(offset)"
+    }
+
 	
 	/**
 	Set custom headers (token and user obtained from session, and other Desclub keys) to a URL request
