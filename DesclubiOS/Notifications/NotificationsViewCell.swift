@@ -27,8 +27,7 @@ class NotificationsViewCell: UITableViewCell {
         if let content = not.contents {
             lblDescr.text = content.getText()
         }
-
+        
         lblDate.text = not.getDate()
-
     }
 }
